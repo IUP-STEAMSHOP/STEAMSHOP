@@ -1,0 +1,75 @@
+site_name: IUP Steamshop Internal Repository
+site_description: Central hub for machine SOPs, shop guidelines, and active student projects.
+
+theme:
+  name: material
+  logo: assets/logo.png
+  palette:
+    primary: red
+    accent: red
+
+copyright: Copyright &copy; 2026 IUP Steamshop
+
+extra_css:
+  - stylesheets/extra.css
+
+# Suppress warnings for manual.docx files (binary assets MkDocs can't validate)
+validation:
+  links:
+    not_found: ignore
+
+nav:
+  - Projects:
+    - Active Work: projects/active/README.md
+    - Past Projects: projects/archive/completed.md
+  - Guidelines:
+    - Onboarding: guidelines/onboarding.md
+    - Safety: guidelines/safety.md
+    - Conduct: guidelines/conduct.md
+  - Machines:
+    - 3D Printing & Scanning:
+      - Original Prusa MINI+: machines/3d-printing/prusa-mini.md
+      - Original Prusa i3 MK3S+: machines/3d-printing/prusa-i3-mk3s.md
+      - Bambu Lab H2D: machines/3d-printing/bambu-h2d.md
+      - Bambu Lab P1S: machines/3d-printing/bambu-p1s.md
+      - Legacy Lulzbot TAZ 6: machines/3d-printing/lulzbot-taz6.md
+      - Formlabs Form 3B SLA: machines/3d-printing/formlabs-3b.md
+      - Ultimaker S3 Dual-Extrusion: machines/3d-printing/ultimaker-s3.md
+      - Mole V2.2 3D Scanner: machines/3d-printing/mole-scanner.md
+    - CNC & Milling:
+      - ShopBot CNC Milling Table: machines/cnc/shopbot.md
+      - HAAS Minimill: machines/cnc/haas-minimill.md
+      - HAAS UMC-500: machines/cnc/haas-umc500.md
+      - Bridgeport Series I 2HP Mill: machines/cnc/bridgeport-mill.md
+    - Laser & Digital Cutting:
+      - Omtech AF3555 130W CO2: machines/digital-cutting/omtech-laser.md
+      - Rabbit Laser RL-80-1290: machines/digital-cutting/rabbit-laser.md
+      - Roland CAMM-1 GS-24: machines/digital-cutting/roland-cutter.md
+      - Wazer Waterjet: machines/digital-cutting/wazer.md
+    - Woodworking:
+      - SawStop 10" Contractor Saw: machines/woodworking/sawstop.md
+      - DeWALT 12" Sliding Miter Saw: machines/woodworking/dewalt-miter-saw.md
+      - DeWALT 13" Planer: machines/woodworking/dewalt-planer.md
+      - Grizzly 17" 2 HP Bandsaw: machines/woodworking/grizzly-bandsaw.md
+      - WEN 16" Scroll Saw: machines/woodworking/wen-scroll-saw.md
+      - JET 12" Drill Press: machines/woodworking/jet-drill-press.md
+      - Bucktool Belt & Disc Sander: machines/woodworking/bucktool-sander.md
+    - Metalworking & Fabrication:
+      - Clausing Lathe: machines/metalworking/clausing-lathe.md
+      - Powermatic Drill Press 1150: machines/metalworking/powermatic-drill-press.md
+      - Baileigh Horizontal Bandsaw: machines/metalworking/baileigh-bandsaw.md
+      - Bemato Bandsaw KB-36: machines/metalworking/bemato-bandsaw.md
+      - PEXTO PX36-A Box & Pan Brake: machines/metalworking/pexto-brake.md
+      - PEXTO 137-L Foot Shear: machines/metalworking/pexto-shear.md
+      - Atlas Mandrel Arbor Press: machines/metalworking/atlas-arbor-press.md
+      - Trinco Sandblaster 48/BP2: machines/metalworking/trinco-sandblaster.md
+      - Rockwell/Delta Machine: machines/metalworking/rockwell-delta.md
+    - Welding:
+      - Hobart Iron Man 230: machines/welding/hobart-ironman.md
+      - Miller Welding Machine: machines/welding/miller-welder.md
+    - Robotics & Automation:
+      - Universal Robots UR5e: machines/robotics/ur5e.md
+      - Universal Robots UR10e: machines/robotics/ur10e.md
+    - Apparel & Heat Presses:
+      - Geo Knight Cap Heat Press: machines/apparel/geo-knight-press.md
+      - USCutter Digital Heat Press: machines/apparel/uscutter-press.md
