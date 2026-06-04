@@ -1,0 +1,51 @@
+/* ─── Logo: always visible on all screen sizes ─── */
+@media screen and (max-width: 76.1875em) {
+  .md-header__button.md-logo {
+    display: inline-block !important;
+  }
+}
+
+/* ─── Home page hero spacing ─── */
+.md-content h1:first-child {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+/* ─── Grid cards: hover lift effect ─── */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ─── Admonition: danger has stronger red border ─── */
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-left-width: 6px;
+}
+
+/* ─── Table: cleaner alternating rows ─── */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: var(--md-code-bg-color);
+}
+
+/* ─── Navigation: slightly bolder active item ─── */
+.md-nav__item--active > .md-nav__link {
+  font-weight: 600;
+}
+
+/* ─── Footer: subtle top border ─── */
+.md-footer {
+  border-top: 2px solid var(--md-primary-fg-color);
+}
